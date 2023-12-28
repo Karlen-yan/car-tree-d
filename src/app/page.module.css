@@ -3,17 +3,34 @@
   flex-direction: row;
   width: 100%;
 }
+
 .article1 {
   width: 40%;
+  display: flex;
+  top: 80px;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  z-index: 1000;
+  position: fixed;
 }
-.article2 {
-  width: 60%;
-  color: #008080;
-}
-.title{
+
+.title {
   text-align: center;
   width: 100%;
   padding: 30px 0px 30px 0px;
   margin: 0px;
   background-color: rgb(255, 255, 255);
+}
+
+.main_container {
+  width: 55%;
+  height: 160vw;
+  margin-left: 43%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.scrolled .article1 {
+  top: 0;
 }
